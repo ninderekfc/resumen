@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Narinder Pal | Administration & Operations Professional</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F1EB;--bg2:#ECE9E4;--card:#FBF9F5;--text:#2D2D2D;--muted:#6b6862;--gold:#B8956A;--line:#DDD6CA;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1f1e1c;--bg2:#2a2926;--card:#262523;--text:#ece8e1;--muted:#a8a39a;--line:#3d3b37}}
+:root[data-theme="dark"]{--bg:#1f1e1c;--bg2:#2a2926;--card:#262523;--text:#ece8e1;--muted:#a8a39a;--line:#3d3b37}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Lato,system-ui,sans-serif;font-weight:300;line-height:1.75;font-size:16px}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:500;margin:0}
+a{color:inherit}
+section{padding:96px 24px}
+.wrap{max-width:900px;margin:0 auto}
+.eyebrow{font-size:.75rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:12px}
+h2{font-size:2.1rem;margin-bottom:12px}
+.rule{width:48px;height:1px;background:var(--gold);margin:0 0 40px}
+nav{position:fixed;top:0;left:0;right:0;z-index:10;padding:calc(14px + env(safe-area-inset-top,0px)) 24px 14px;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .in{max-width:900px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:16px}
+nav b{font-family:'Playfair Display',serif;font-weight:500;font-size:1.1rem}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-size:.85rem}
+nav ul a{text-decoration:none;color:var(--muted)}nav ul a:hover{color:var(--gold)}
+.hero{min-height:100vh;display:flex;align-items:center;text-align:center;padding-top:120px;background:linear-gradient(160deg,var(--bg) 0%,var(--bg2) 100%)}
+.hero h1{font-size:clamp(2.6rem,7vw,4.6rem);margin-bottom:8px;letter-spacing:-.01em}
+.role{color:var(--gold);letter-spacing:.2em;text-transform:uppercase;font-size:.8rem;font-weight:500;margin-bottom:28px}
+.tag{max-width:620px;margin:0 auto 40px;font-family:'Playfair Display',serif;font-style:italic;font-size:1.2rem;color:var(--muted);line-height:1.6}
+.btn{display:inline-block;background:var(--gold);color:#fff;border:0;border-radius:999px;padding:14px 38px;font:500 .85rem Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(184,149,106,.35)}
+.about p{max-width:720px;margin:0 0 28px;font-size:1.05rem}
+.facts{display:flex;flex-wrap:wrap;gap:40px;padding-top:24px;border-top:1px solid var(--line)}
+.facts div span{display:block;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.alt{background:var(--bg2)}
+.timeline{position:relative;padding-left:36px;border-left:1px solid var(--line);margin-left:6px}
+.job{position:relative;margin-bottom:48px}.job:last-child{margin-bottom:0}
+.job::before{content:"";position:absolute;left:-43px;top:9px;width:13px;height:13px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 5px var(--bg)}
+.job h3{font-size:1.3rem}
+.meta{color:var(--muted);font-size:.9rem;margin:2px 0 4px}
+.date{color:var(--gold);font-size:.78rem;letter-spacing:.15em;text-transform:uppercase;font-weight:500;margin-bottom:10px}
+.job ul{margin:0;padding-left:18px;color:var(--muted)}
+.job li{margin-bottom:4px}
+.pills{display:flex;flex-wrap:wrap;gap:12px}
+.pills span{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:8px 20px;font-size:.88rem;transition:border-color .2s,color .2s}
+.pills span:hover{border-color:var(--gold);color:var(--gold)}
+.edu{border:1px solid var(--line);background:var(--card);border-radius:16px;padding:32px;max-width:520px}
+.edu p{margin:4px 0 0;color:var(--muted)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.links a{display:block;text-decoration:none;margin-bottom:22px;font-size:1.05rem}
+.links small{display:block;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.links a:hover b{color:var(--gold)}.links b{font-weight:400}
+form{display:flex;flex-direction:column;gap:14px}
+input,textarea{width:100%;border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:14px;padding:14px 18px;font:300 1rem Inter,sans-serif;outline:none;transition:border-color .2s}
+input:focus,textarea:focus{border-color:var(--gold)}
+textarea{min-height:130px;resize:vertical}
+form .btn{align-self:flex-start}
+#note{font-size:.85rem;color:var(--muted);min-height:1.2em}
+footer{text-align:center;padding:32px 24px;font-size:.8rem;color:var(--muted);border-top:1px solid var(--line)}
+.fade{opacity:0;transform:translateY(18px);transition:opacity .9s ease,transform .9s ease}
+.fade.show{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.fade{opacity:1;transform:none;transition:none}}
+@media (max-width:720px){section{padding:72px 20px}nav ul{display:none}.contact-grid{grid-template-columns:1fr;gap:40px}.facts{gap:24px}}
+</style>
+</head>
+<body>
+<nav><div class="in"><b>Narinder Pal</b>
+<ul><li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li><li><a href="#skills">Skills</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+
+<header class="hero"><div class="wrap fade">
+<h1>Narinder Pal</h1>
+<div class="role">Administration &amp; Operations Professional</div>
+<p class="tag">“Driving Operational Excellence Through Efficient Administration, Team Leadership, and Exceptional Customer Service.”</p>
+<a class="btn" href="#contact">Let's Connect</a>
+</div></header>
+
+<section id="about"><div class="wrap about fade">
+<div class="eyebrow">About Me</div><h2>Professional Summary</h2><div class="rule"></div>
+<p>Detail-oriented and results-driven professional with extensive experience in operations, administration, customer service, and team coordination across aviation catering, banking, and healthcare sectors.</p>
+<p>Currently with Emirates Flight Catering in Dubai, I manage daily operational workflows, maintain accurate records, coordinate staff schedules, ensure compliance with quality and hygiene standards, and resolve operational issues efficiently. Proficient in Microsoft Office, documentation, and data management, with strong communication, problem-solving, and organizational skills.</p>
+<div class="facts">
+<div><span>Location</span>Dubai, UAE</div><div><span>Currently</span>Emirates Flight Catering</div><div><span>Sectors</span>Aviation · Banking · Healthcare</div>
+</div></div></section>
+
+<section id="experience" class="alt"><div class="wrap fade">
+<div class="eyebrow">Experience</div><h2>Career Journey</h2><div class="rule"></div>
+<div class="timeline">
+<div class="job"><div class="date">Sep 2025 – Present</div><h3>CCU Dispatch</h3><div class="meta">Emirates Flight Catering · Dubai, UAE</div>
+<ul><li>Manage daily operational and administrative activities.</li><li>Supervise staff and ensure compliance with quality checklists.</li><li>Maintain attendance records, staff schedules, and operational data.</li><li>Resolve operational issues and coordinate with internal teams.</li></ul></div>
+<div class="job"><div class="date">Mar 2024 – Aug 2025</div><h3>Clerk</h3><div class="meta">Arora Fruit Company L.L.C. · Punjab, India</div>
+<ul><li>Maintained daily sales records, invoices, and business documentation.</li><li>Managed data entry, filing, and inventory records.</li><li>Assisted with billing, order processing, and payment records.</li><li>Coordinated with customers, suppliers, and internal staff.</li><li>Supported daily office operations and maintained accurate records.</li></ul></div>
+<div class="job"><div class="date">Mar 2023 – Feb 2024</div><h3>Credit Officer</h3><div class="meta">HDFC Bank · India</div>
+<ul><li>Assisted clients with inquiries and banking-related services.</li><li>Maintained accurate records and confidential documents.</li><li>Improved administrative workflows and service efficiency.</li><li>Coordinated daily office activities and supported customer satisfaction.</li></ul></div>
+<div class="job"><div class="date">May 2019 – Feb 2022</div><h3>Office Admin</h3><div class="meta">Pranav Multispeciality Hospital · Punjab, India</div>
+<ul><li>Managed daily office operations and administrative records.</li><li>Coordinated communication between departments and staff.</li><li>Maintained documentation and ensured compliance with hygiene and safety standards.</li><li>Supported workflow improvements and efficient service delivery.</li></ul></div>
+</div></div></section>
+
+<section id="skills"><div class="wrap fade">
+<div class="eyebrow">Skills</div><h2>Key Skills</h2><div class="rule"></div>
+<div class="pills">
+<span>Administrative &amp; Office Management</span><span>Data Entry &amp; Record Keeping</span><span>Microsoft Office (Word, Excel, Outlook)</span><span>Customer Service &amp; Client Relations</span><span>Inventory Management &amp; Stock Records</span><span>Billing, Invoicing &amp; Documentation</span><span>Team Coordination &amp; Staff Scheduling</span><span>Operational Support &amp; Workflow Management</span><span>Communication &amp; Problem-Solving</span><span>Time Management &amp; Multitasking</span><span>Attention to Detail &amp; Accuracy</span><span>Confidential Document Handling</span><span>Quality Control &amp; Compliance</span><span>Filing &amp; Document Management</span>
+</div></div></section>
+
+<section id="education" class="alt"><div class="wrap fade">
+<div class="eyebrow">Education</div><h2>Academic Background</h2><div class="rule"></div>
+<div class="edu"><h3>Bachelor of Computer Applications (BCA)</h3><p>Punjab University, India</p><p style="color:var(--gold)">2017</p></div>
+</div></section>
+
+<section id="contact"><div class="wrap fade">
+<div class="eyebrow">Contact</div><h2>Let's Connect</h2><div class="rule"></div>
+<div class="contact-grid">
+<div class="links">
+<a href="tel:+971566104908"><small>Phone</small><b>+971 56 610 4908</b></a>
+<a href="mailto:palninder53@gmail.com"><small>Email</small><b>palninder53@gmail.com</b></a>
+<div><small style="font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)">Location</small>Dubai, UAE</div>
+</div>
+<form id="f">
+<input id="n" type="text" placeholder="Your name" required>
+<input id="p" type="tel" placeholder="Phone number">
+<textarea id="m" placeholder="Your message" required></textarea>
+<button class="btn" type="submit">Send Message</button>
+<div id="note"></div>
+</form>
+</div></div></section>
+
+<footer>© <span id="y"></span> Narinder Pal · Dubai, UAE</footer>
+
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.fade').forEach(function(el){io.observe(el)});
+document.getElementById('f').addEventListener('submit',function(ev){
+ev.preventDefault();
+var n=document.getElementById('n').value,p=document.getElementById('p').value,m=document.getElementById('m').value;
+var body='Name: '+n+'\nPhone: '+p+'\n\n'+m;
+window.location.href='mailto:palninder53@gmail.com?subject='+encodeURIComponent('Website enquiry from '+n)+'&body='+encodeURIComponent(body);
+document.getElementById('note').textContent='Opening your email app to send the message…';
+});
+</script>
+</body>
+</html>
